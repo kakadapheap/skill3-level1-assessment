@@ -71,7 +71,9 @@ div h2 {
 
 
 .product-container {
-
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .product {
@@ -109,13 +111,13 @@ div h2 {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
 }
 
 @media (max-width: 768px) {
   .product-list {
       /* grid-template-columns: 1fr; */
+
   }
   .product {
       flex-direction: column;
